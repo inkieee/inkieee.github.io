@@ -1,0 +1,181 @@
+body {
+    margin:0;
+    /*background-color: grey;*/
+}
+p {
+    margin: 1 1 1 1;
+    font-family: Assistant;
+    /*font-weight: bold;*/
+    font-size: 14pt;
+    text-indent: 50px;
+}
+h1 {
+    font-family: Assistant;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:0px;
+    /*background-color: #b3b3b3;*/
+    border-radius: 12pt;
+    border-color: black;
+}
+h2 {
+    font-family: Assistant;
+    font-size: 35px;
+    font-weight: normal;
+    margin-top:0px;
+    /*background-color: #b3b3b3;*/
+    border-radius: 12pt;
+    border-color: black;
+}
+h3 {
+    font-family: Assistant;
+    font-size: 50px;
+    margin-top:10px;
+    /*background-color: #b3b3b3;*/
+    border-radius: 12pt;
+    border-color: black;
+}
+li {
+    font-family: Assistant;
+}
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: grey;
+    height: 1px;
+    margin: 50px 0 50px 0;
+}
+#name {
+    display: block;
+    color: black;
+    text-align: center;
+    /*padding: 2.5px 4px 2.5px 4px;*/
+    font-family: Lobster;
+    /*background-color: #b3b3b3;*/
+    font-size: 30px;
+    margin: 0 0 0 0 ;
+}
+#me-pic {
+    border-radius: 50%;
+    margin-top: 50px;
+    border-color: black;
+    height: 246px;
+}
+/* project preview page images */
+#projimg {
+    border-radius: 50%;
+    margin-top: 0px;
+    border-color: black;
+    width: 100%;
+    height: 100%;   
+}
+#title-break {
+    margin-top: 50px;
+}
+.social-media {
+    border-radius: 50%;
+    /*margin-top: 50px;*/
+    height: 40;
+    width: 40;
+}
+.block {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin: 50px 0 0 0;
+    padding: 0 15% 0 15%;
+}
+.bubble {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin: 0 0 0 0;
+    padding: 0 15% 0 15%;
+}
+.projspacer{
+    margin: 0 0 0 0;
+    padding: 15px 0 15px 0 ;
+}
+.tech-list {
+    /*margin-left: 50px;*/
+    font-family: Poiret One;
+    font-size: 14pt;
+}
+.nobull {
+    list-style-type: none;
+}
+.navbar {
+    /* background-color: #e7e7e7; */
+    background-color:rgb(235, 235, 235);
+}
+/* The following is required to shift anchor link down so you can see the content after the navigation bar */
+.anchor:before {
+    display:block;
+    content:" ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+}
+.navbar-default .navbar-nav > li > a {
+    /*navbar text color*/
+    color:grey;
+    background-color:rgb(235, 235, 235);
+}
+.navbar li a{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 9px 14px 14px 14px;
+    text-decoration: none;
+    font-family: Lobster;
+    font-size: 23px;
+    background-color: rgb(235, 235, 235)
+}
+.dropdown-menu {
+    background-color: rgb(235, 235, 235);
+}
+.dropdown-menu > li > a {
+    /* dropdown text color */
+    color:grey;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    /* dropdown text background color */
+    background-color: rgb(235, 235, 235);
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    /* text background color when hover  */
+    background-color:rgb(235, 235, 235); 
+    color:black;
+ }
+/*.navbar-default .navbar-nav > .active  {
+    background: #eaeaea;
+}*/
+.img-mar {
+    width:500px ;
+    margin-bottom: 50px;
+}
+.img-solidworks-reddit {
+    border-radius: 0%;
+    margin-top: 0px;
+    border-color: black;
+    width: 100%;
+    height: 100%; 
+    vertical-align: middle;
+}
+@media (max-width: 768px) {
+    #projimg {
+        border-radius: 50%;
+        margin-top: 0px;
+        border-color: black;
+        width: 50%;
+        height: 50%;   
+    }
+    .img-mar {
+        width:100%;
+    }
+}
+

@@ -1,0 +1,7 @@
+AuthName "main"
+AuthUserFile "/home/kevietun/.htpasswds/public_html/passwd"
+
+ErrorDocument 404 /404.md
+ErrorDocument 401 /401.md
+
+Redirect /email https://kevinliao.info:2096/
