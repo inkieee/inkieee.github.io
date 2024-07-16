@@ -1,69 +1,100 @@
-<!-- <!DOCTYPE html> -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap framework -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Kevin Liao - Personal Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Assistant:200|Comfortaa|Roboto:100" rel="stylesheet">
-    <!-- End Fonts -->
-    <!--script src="https://use.fontawesome.com/fba50b508e.js"></script-->
-    <title>Liao</title>
- </head>
-
-
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Damion|Tangerine|Assistant:200|Comfortaa|Roboto:100&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+        #name {
+            font-family: 'Lobster', cursive;
+            font-size: 2em;
+        }
+        #slogan {
+            font-size: 0.7em;
+            color: #888;
+        }
+        .anchor {
+            margin-top: 50px;
+        }
+        .block {
+            padding: 30px 0;
+        }
+        .block h3 {
+            font-family: 'Damion', cursive;
+            font-size: 2.5em;
+        }
+        .bottom-footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+        }
+    </style>
+</head>
 <body>
-<div class="container-fluid navbar">
-    <div class="row">
-        <p id="name" class="col-md-5 navbar-left">Kevin <q style="font-size:15px" id="slogan">Neat guy, doing neat things!</q></p>
-        <!--div class="col-md-7 navbar-right">
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="#home">Home</a>
-        </div-->
-    </div>
-    <div id="title-break"><hr></div>
-</div>
-<div class="container-fluid first block">
-    <!-- <hr id="top-padded"> -->
-    <div class="row">
-        <div class="col-md-12">
-            <h3 class="text-center anchor" id="home">Personal Portfolio</h3>
-            <p class="text-center">Just an average guy trying to make his way in the world.</p>
+
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <p id="name">Kevin <span id="slogan">Neat guy, doing neat things!</span></p>
+            </div>
+            <!-- Uncomment and use if navigation links are needed in future
+            <div class="col-md-6 text-right">
+                <a href="#home" class="btn btn-link">Home</a>
+                <a href="#about" class="btn btn-link">About</a>
+                <a href="#contact" class="btn btn-link">Contact</a>
+            </div>
+            -->
         </div>
     </div>
-</div>
-<div class="container-fluid second block">
-<hr>
-    <h3 class="text-center anchor" id="about">About Me</h3>
-    <p class="text-center"> I have a B.S. in mechanical engineering, and am registered as an EIT in Pennsylvania! </p><br>
-    <!--div class="row tech-list text-center">
-    </div-->
-</div>
-<!--div class="container-fluid third block">
-<hr>
-    <h3 class="text-center anchor" id="projects">Projects</h3>
-	<p> </p>
-</div-->
-<div class="container-fluid fourth block">
-<hr>
-    <h3 class="text-center anchor" id="contact">Contact</h3>
-    <div class="col-md-12 text-center">
-        <a href="https://www.linkedin.com/in/kevin-liao/" target="_blank">LinkedIn</a>
-    </div>
-</div>
-<div class="col=md-12 bottom-footer text-center">
-<hr>
-    <br>
-    <p>Copyright © Kevin Liao 2024.</p>
-</div>
+</nav>
+
+<section id="home" class="container-fluid first block text-center">
+    <h3>Personal Portfolio</h3>
+    <p>Just an average guy trying to make his way in the world.</p>
+</section>
+
+<section id="about" class="container-fluid second block text-center">
+    <hr>
+    <h3>About Me</h3>
+    <p>I have a B.S. in Mechanical Engineering and am registered as an EIT in Pennsylvania!</p>
+</section>
+
+<!-- Uncomment and use if project section is needed in future
+<section id="projects" class="container-fluid third block text-center">
+    <hr>
+    <h3>Projects</h3>
+    <p>Details about my projects will go here.</p>
+</section>
+-->
+
+<section id="contact" class="container-fluid fourth block text-center">
+    <hr>
+    <h3>Contact</h3>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/kevin-liao/" target="_blank">LinkedIn</a></p>
+</section>
+
+<footer class="container-fluid bottom-footer text-center">
+    <hr>
+    <p>© Kevin Liao 2024. All rights reserved.</p>
+</footer>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
